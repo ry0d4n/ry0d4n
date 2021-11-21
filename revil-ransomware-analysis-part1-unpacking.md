@@ -7,7 +7,7 @@ we start first by loading the sample in <a href='http://www.exeinfo.byethost18.c
 
 ![sodinokibi1](sodinokibi1.png)<br>
 
-we have multiple choices to manually unpack the sample but i'll be choosing <a href='https://x64dbg.com/'>x32dbg<a> to unpack it, so fire up x32dbg and load the sample.</br>
+we have multiple choices to manually unpack the sample but i'll be choosing <a href='https://x64dbg.com/'>x32dbg</a> to unpack it, so fire up x32dbg and load the sample.
 
 ![sodinokibi2](sodinokibi2.png)<br>
 
@@ -21,4 +21,8 @@ now you have to make a single step forward and follow the value of eax in dump
   
 ![sodinokibi3](sodinokibi3.jpg)
   
-as we can see its an empty space of memory
+as we can see its an empty space of memory but it is likely to be filled later with some content, usually malware authors tend to use <span style='color:red'>VirtualProtect</span> alot to change the protections on a piece of data in the virtual memory, it is an important API to put a breakpoint on too
+
+put a breakpoint with bp VirtualProtect and run the executable, once you hit the breakpoint look to the empty region that was allocated before, you should see a PE file extracted in that region and thats the unpacked executable.
+
+![sodinokibi4](sodinokibi4.png)
