@@ -2,13 +2,23 @@
 here i'll exaplain how to unpacak the famous <span style='color:red'>REvil</span> Ransomware.<br>
 to download the original sample <a href='sample'>click here</a>.<br>
 <hr>
-we start first by loading the sample in exeinfo and it is showing that it is packed with an unknown packer.
+## identifying packing
+we start first by loading the sample in <a href='http://www.exeinfo.byethost18.com/'>exeinfo</a> and it is showing that it is packed with an unknown packer.
 
 ![sodinokibi1](sodinokibi1.png)<br>
 
-we have multiple choices to manually unpack the sample but i'll be choosing x32dbg to unpack it, so fire up x32dbg and load the sample.</br>
+we have multiple choices to manually unpack the sample but i'll be choosing <a href='https://x64dbg.com/'>x32dbg<a> to unpack it, so fire up x32dbg and load the sample.</br>
 
 ![sodinokibi2](sodinokibi2.png)<br>
 
-at this point we dont know anything about the unpacking process or how it is implemented, one choice to use is to look for possible memory allocations and follow the addresses and you might get the unpacked version gets extracted in the memory region<br>
+at this point we dont know anything about the unpacking process or how it is implemented, one choice to use is to look for possible memory allocations and follow the addresses, you might get the unpacked version gets extracted inside the memory region<br>
 to do this we have to look for <span style='color:red'>VirtualAlloc</span> API and follow the addresses returned in eax.
+
+## dumping executable
+press Ctrl + G and type VirtualAlloc and follow the jumps until you reach a call to the API, once you find it put a breakpoint and run until the breakpoint is hit.
+  
+now you have to make a single step forward and follow the value of eax in dump
+  
+![sodinokibi3](sodinokibi3.jpg)
+  
+as we can see its an empty space of memory
