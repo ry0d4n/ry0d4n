@@ -1,0 +1,6 @@
+# Unpacking REvil Ransomware sodinokibi.exe
+> here i'll exaplain how to unpacak the famous <span style='color:red'>REvil</span> Ransomware.
+>to download the original sample <a href='sample'>click here</a>.
+***
+we start first by loading the sample in exeinfo and it is showing that it is packed with unknown packer.
+
