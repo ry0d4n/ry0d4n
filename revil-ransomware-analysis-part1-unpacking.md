@@ -26,3 +26,14 @@ as we can see its an empty space of memory but it is likely to be filled later w
 put a breakpoint with bp VirtualProtect and run the executable, once you hit the breakpoint look to the empty region that was allocated before, you should see a PE file extracted in that region and thats the unpacked executable.
 
 ![sodinokibi4](sodinokibi4.png)
+
+to dump the executable right click on the address in dump and select follow in memory map then right click on section and select dump memory to file.
+
+until now we have an unpacked version of the malware but still we have no imports resolved.
+
+## resolving IAT
+in this malware specifically the imports are dynamically resolved at run time, it is calling a function at the beginning of execution and when analyzing that functions you'll notice that it is looping through hardcoded values which likely are the imports addresses
+
+![sodinokibi5](sodinokibi5.png)
+
+![sodinokibi6](sodinokibi6.png)
