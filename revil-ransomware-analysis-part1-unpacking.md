@@ -2,7 +2,7 @@
 here i'll exaplain how to unpacak the famous <span style='color:red'>REvil</span> Ransomware.<br>
 to download the original sample <a href='sample'>click here</a>.<br>
 <hr>
-we start first by loading the sample in exeinfo and it is showing that it is packed with an unknown packer.<br>
+we start first by loading the sample in exeinfo and it is showing that it is packed with an unknown packer.
 
 ![sodinokibi1](sodinokibi1.png)<br>
 
