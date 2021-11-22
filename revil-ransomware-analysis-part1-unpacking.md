@@ -36,4 +36,10 @@ in this malware specifically the imports are dynamically resolved at run time, i
 
 ![sodinokibi5](sodinokibi5.png)
 
-![sodinokibi6](sodinokibi6.png)
+![sodinokibi6](sodinokini6.png)
+
+to fix the imports a good choice is to dump the executable at run time after it resolves the imports.
+> note that until now we are just assuming that the function is responsible for the import resolving
+to clear our doupts we have to get back to x32dbg and set a breakpoint on the fuction, then single step forward
+
+![sodinokibi6](sodinokini9.png)
