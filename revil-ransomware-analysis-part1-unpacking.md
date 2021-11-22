@@ -7,6 +7,17 @@ header {
 }
 </style>
 # ./ry0d4n<br>
+<style>
+  
+@import "{{ site.theme }}";
+
+header {
+  display: none;
+}
+</style>
+# ./ry0d4n<br>
+
+***
 
 ***
 # REvil Ransomware 0x01 - Unpacking
