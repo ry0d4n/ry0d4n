@@ -1,5 +1,5 @@
-# Unpacking REvil Ransomware sodinokibi.exe
-Here i'll explain how to unpack the famous <span style='color:red'>REvil</span> Ransomware.<br>
+# REvil Ransomware 0x01 - Unpacking
+Here i'll explain how to unpack the famous <span style='color:red'>REvil</span> Ransomware sodinokibi.exe.<br>
 to download the original sample <a href='sample'>click here</a>.<br>
 <hr>
 ## Identifying Packing <br>
@@ -41,11 +41,11 @@ In this malware specifically, the imports are dynamically resolved at run time, 
 to fix the imports a good choice is to dump the executable at run time after it resolves the imports.
 > <p>note that until now we are just assuming that the function is responsible for the import resolving</p>
 
-<p>to clear our doupts we have to get back to x32dbg and set a breakpoint on the fuction, then single step forward</p>
+<p>to clear our doubts we have to get back to x32dbg and set a breakpoint on the function, then single step forward</p>
 
 ![sodinokibi9](sodinokibi9.jpg)
 
-notice that API names are now clear to us what means that th imports were resolved successfully, the next step is to dump it using <span style='color:red'><a href='https://github.com/NtQuery/Scylla'>Scylla</a></span> plugin.
+notice that API names are now clear to us what means that the imports were resolved successfully, the next step is to dump it using <span style='color:red'><a href='https://github.com/NtQuery/Scylla'>Scylla</a></span> plugin.
 click plugins and choose Scylla then dump the executable, click -> IAT Autosearch -> Get Imports -> Fix Dump.
 
 ![sodinokibi10](sodinokibi10.png)
