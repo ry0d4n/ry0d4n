@@ -1,6 +1,6 @@
 # REvil Ransomware 0x01 - Unpacking
 Here i'll explain how to unpack the famous <span style='color:red'>REvil</span> Ransomware sodinokibi.exe.<br>
-to download the original sample <a href='sample'>click here</a>.<br>
+to download the original sample <a href='https://app.any.run/tasks/e163502e-3334-46d9-aeb7-e5c925b64af7/'>click here</a>.<br>
 <hr>
 ## Identifying Packing <br>
 We start first by loading the sample in <a href='http://www.exeinfo.byethost18.com/'>exeinfo</a> and it is showing that it is packed with an unknown packer.
