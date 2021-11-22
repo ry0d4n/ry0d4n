@@ -6,9 +6,9 @@
 
 - 📫 How to reach me ...
 
-[![alt text][1.1]][1]
-[![alt text][2.1]][2]
-[![alt text][6.1]][6]
+- [![alt text][1.1]][1]
+- [![alt text][2.1]][2]
+- [![alt text][6.1]][6]
 
 [1.1]: http://i.imgur.com/tXSoThF.png (twitter)
 [2.1]: http://i.imgur.com/P3YfQoD.png (facebook)
