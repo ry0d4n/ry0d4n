@@ -5,6 +5,14 @@
 - 👀 I am and Electrical Engineering student in Sudan University of Science and Technology and mainly interested in CYBESECURITY IN GENERAL - specifically Malware Analysis and Reverse Engineerring ...
 
 - 📫 How to reach me ...
+
+[![alt text][1.1]][1]
+[![alt text][2.1]][2]
+[![alt text][3.1]][3]
+[![alt text][4.1]][4]
+[![alt text][5.1]][5]
+[![alt text][6.1]][6]
+
 [1.1]: http://i.imgur.com/tXSoThF.png (twitter icon with padding)
 [2.1]: http://i.imgur.com/P3YfQoD.png (facebook icon with padding)
 [6.1]: http://i.imgur.com/0o48UoR.png (github icon with padding)
