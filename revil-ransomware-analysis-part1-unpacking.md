@@ -39,12 +39,18 @@ in this malware specifically the imports are dynamically resolved at run time, i
 ![sodinokibi6](sodinokini6.png)
 
 to fix the imports a good choice is to dump the executable at run time after it resolves the imports.
-> note that until now we are just assuming that the function is responsible for the import resolving
+> <p>note that until now we are just assuming that the function is responsible for the import resolving</p>
 to clear our doupts we have to get back to x32dbg and set a breakpoint on the fuction, then single step forward
 
-![sodinokibi9](sodinokibi9.png)
+![sodinokibi9](sodinokibi9.jpg)
 
 notice that API names are now clear to us what means that th imports were resolved successfully, the next step is to dump it using <span style='color:red'><a href='https://github.com/NtQuery/Scylla'>Scylla</a></span> plugin.
 click plugins and choose Scylla then dump the executable, click -> IAT Autosearch -> Get Imports -> Fix Dump.
 
 ![sodinokibi10](sodinokibi10.png)
+
+to make sure everything is OK review the imports in pestudio.
+
+![sodinokibi11](sodinokibi11.png)
+
+Great! we successufully unpacked the malware.
