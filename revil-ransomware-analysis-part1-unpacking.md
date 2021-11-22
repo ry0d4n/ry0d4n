@@ -54,3 +54,5 @@ to make sure everything is OK review the imports in pestudio.
 ![sodinokibi11](sodinokibi11.png)
 
 Great! we successufully unpacked the malware.
+
+<iframe src="https://vlipsy.com/embed/tVmiYVBz" width="640" height="360" frameborder="0"></iframe>
