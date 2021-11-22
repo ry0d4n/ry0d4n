@@ -1,3 +1,11 @@
+<style>
+  
+@import "{{ site.theme }}";
+
+header {
+  display: none;
+}
+</style>
 # ./ry0d4n<br>
 
 ***
