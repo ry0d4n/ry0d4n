@@ -42,4 +42,9 @@ to fix the imports a good choice is to dump the executable at run time after it 
 > note that until now we are just assuming that the function is responsible for the import resolving
 to clear our doupts we have to get back to x32dbg and set a breakpoint on the fuction, then single step forward
 
-![sodinokibi6](sodinokini9.png)
+![sodinokibi9](sodinokibi9.png)
+
+notice that API names are now clear to us what means that th imports were resolved successfully, the next step is to dump it using <span style='color:red'><a href='https://github.com/NtQuery/Scylla'>Scylla</a></span> plugin.
+click plugins and choose Scylla then dump the executable, click -> IAT Autosearch -> Get Imports -> Fix Dump.
+
+![sodinokibi10](sodinokibi10.png)
