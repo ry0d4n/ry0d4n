@@ -14,7 +14,10 @@ header {
 
 # Posts
 
-### <a style='color: green;text-decoration: none;' href='/revil-ransomware-analysis-part1-unpacking'>REvil Ransomware 0x01 - Unpacking</a>
-<p>REvil Ransomware analysis series - Part1</p>
+### <a style='color: green;text-decoration: none;' href='/revil-ransomware-analysis-part1-unpacking'>Malware Unpacking - REvil</a>
+<p>REvil Ransomware unpacking</p>
+
+### <a style='color: green;text-decoration: none;' href='/malware-unpacking-dridex'>Malware Unpacking - DRIDEX</a>
+<p>dridex first stage unpacking</p>
 
 ### <a style='color: green;text-decoration: none;' href='/about'>WHOAMI ?</a>
